@@ -1,5 +1,5 @@
 const product = require('../models/products')
-
+const asyncWrapper = require("../middleware/async");
 const getAllProducts = (req, res) =>{ 
 
 }
@@ -12,8 +12,12 @@ const getSingleProuct = (req, res) => {
 
 }
 
-const deleteProduct = () => { 
+const deleteProduct = (req,res) => { 
 
 }
 
-module.exports = {getAllProducts, createProduct, getSingleProuct, deleteProduct}
+const updateProduct = (req, res) =>{ 
+
+}
+
+module.exports = {getAllProducts, createProduct, getSingleProuct, deleteProduct,updateProduct}

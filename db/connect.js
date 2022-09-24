@@ -6,4 +6,7 @@ const connectDB = () => {
       return mongoose.connect(process.env.MONGOURI).then(()=>{console.log('connected to database')})
 }
 
-connectDB()
+
+
+
+module.exports = connectDB
