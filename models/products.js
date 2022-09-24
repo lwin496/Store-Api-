@@ -1,15 +1,15 @@
 const mongoose = require('mongoose')
 
-const productsSchema = new products.Schema({
+const {Schema} = mongoose; 
+
+const productsSchema = new Schema({ 
       name:{
             type: String,
             required: [true, 'Provide name of devilfruit.'],
-            trim: true,
       },
       power:{ 
             type: String, 
             required: [true, 'Provide details of the devilfruits power.'], 
-            trim : true,
       },
       availabilty: { 
             type: Boolean, 
@@ -18,4 +18,5 @@ const productsSchema = new products.Schema({
 })
 
 
-module.exports = products.mdel('name','power','availabilty')
+
+module.exports = mongoose.model('products', productsSchema)
