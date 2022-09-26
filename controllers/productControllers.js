@@ -2,11 +2,17 @@ const product = require('../models/products')
 const asyncWrapper = require("../middleware/async");
 
 const getAllProducts = asyncWrapper(async(req, res) =>{ 
-      const products = await products.find({})
-      res.status(200).json({})
+      const products = await product.find({})
+      console.log(products)
+      res.status(201).send(products)
 })
+
+
+
 const createProduct = asyncWrapper(async(req, res) =>{ 
-      
+      const products = await product.create(req.body)
+      console.log(products)
+      res.status(201).send(products)
 })
 
 
