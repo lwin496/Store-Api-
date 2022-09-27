@@ -17,6 +17,7 @@ const errorHandlerMiddleware = require('./middleware/error-handler')
 app.use('/', products)
 app.use(errorHandlerMiddleware)
 app.use(notFound)
+
 app.get('/', (req, res) => {
       
 })
