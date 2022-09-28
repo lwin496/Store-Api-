@@ -10,7 +10,7 @@ const productsSchema = new mongoose.Schema({
       power:{ 
             type: String, 
             required: [true, 'Provide details of the devilfruits power.'], 
-      },
+      }, 
       availabilty: { 
             type: Boolean, 
             required: [true, 'Provide details if the devilfruit is in this world.']

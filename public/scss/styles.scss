@@ -1,0 +1,14 @@
+// Variable overrides first
+$primary: #301934;
+$secondary: whitesmoke;
+$enable-shadows: true;
+$prefix: "mo-";   
+
+.sub-container{ 
+      border: 1px solid whitesmoke;
+      height: 50vh;
+      width: 50vw;
+}
+
+// Then import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";

@@ -4,7 +4,7 @@ const { createCustomError } = require('../errors/custom-error');
 
 const getAllProducts = asyncWrapper(async(req, res) =>{ 
       const products = await product.find({})
-      console.log(products)
+//console.log(products)
       res.status(201).send(products)
 })
 
