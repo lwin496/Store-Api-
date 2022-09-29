@@ -5,7 +5,8 @@ const connectDB = require('./db/connect')
 const PORT = 5000; 
 
 app.use(express.static('./public'))
-app.use(express.json())
+
+app.use(express.urlencoded({extended:true}));
 
 // middleware
 const notFound = require('./middleware/404')
