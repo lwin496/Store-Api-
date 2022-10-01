@@ -13,7 +13,7 @@ const getAllProducts = asyncWrapper(async(req, res) =>{
 const createProduct = asyncWrapper(async(req, res) =>{ 
       const products = await product.create(req.body)
       console.log(products)
-      res.status(201).json({products})
+      res.status(201).
 })
 
 
