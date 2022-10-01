@@ -5,24 +5,39 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Devil Fruit Store</title>
-      <link rel="stylesheet" href="./styles/css/index.css">
+      <link rel="stylesheet" href="css/styles.css">
       
 </head>
-<body>
-      <h1 class="title">Devil-Store</h1>                   
+<body class="bg-primary text-secondary">
+      <div class="container">
+            <h1 class="d-flex justify-content-center mt-5">Devil-Store</h1>     
+            <div class="container d-flex justify-content-center">
+                  <form action="" class="d-flex">
+                        <h1>Add Task</h1>
+                        <input type="text" name="" id="name" placeholder="NAME">
+                        <input type="text" name="" id="power" placeholder="POWER">
+                        <input type="text" name="" id="availiblity" placeholder="AVAILIBILTY">
+                        <button type="submit" class="btn btn-primary btn-outline-secondary"> ADD </button>
+                  </form>
+            </div>              
+      </div>
+  
+      <div class="sub-container m-auto p-2 text-dark d-flex gap-2 " id = "maincontainer">
+            <!-- card start -->
+            <div class="card h-50 m-auto" style="width: 18rem;" id = "maincard">
+                  <div class="card-body">
+                    <h5 class="card-title  d-flex justify-content-center">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted  d-flex justify-content-center">Card subtitle</h6>
+                    <p class="card-text d-flex justify-content-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-around">
+                        <a href="#" class="card-link">DELETE</a>
+                        <a href="#" class="card-link">EDIT</a>
+                    </div>
+                  </div>
+            </div>
+            <!-- card end -->
+      </div>
       
-      <div class="input-container">
-            <form action="">
-                  <h1>Search for: </h1>
-                  <input type="text" id="">
-            </form>
-      </div>
-
-      <div class="output-container">
-            
-      </div>
-
-
             
       <script src="browser-logic.js"></script>
 </body>
